@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+        <a href="index.html">
+            <img src="./img/logo-no-background.png" width="100" alt="Logo">
+        </a>
+        
+        <nav class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+
+  <section id="contact">
+    <h2>Let's Work Together!</h2>
+    <form id="contact-form" onsubmit="submitForm(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Say Hello!</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

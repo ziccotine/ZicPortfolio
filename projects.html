@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+        <a href="index.html">
+            <img src="./img/logo-no-background.png" width="100" alt="Logo">
+        </a>
+        
+        <nav class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+
+  <section id="projects">
+    <h2>My Projects!</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <div class="project-info">
+          <h3>Project 1</h3>
+          <p>Short description for Project 1.</p>
+          <button class="toggle-details" onclick="toggleProjectDetails(this)">▼</button>
+        </div>
+        <div class="project-details" style="display: none;">
+          <p>Detailed description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-info">
+          <h3>Project 2</h3>
+          <p>Short description for Project 2.</p>
+          <button class="toggle-details" onclick="toggleProjectDetails(this)">▼</button>
+        </div>
+        <div class="project-details" style="display: none;">
+          <p>Detailed description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+      </div>
+
+      <!-- Repeat for other projects -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
