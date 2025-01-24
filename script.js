@@ -1,10 +1,10 @@
 // Project carousel data for the home page
 const projects = [
-    { image: './img/temp/project-1.jpg', description: "Description for Project 1" },
-    { image: "./img/temp/project-2.jpg", description: "Description for Project 2" },
-    { image: "./img/temp/project-3.jpg", description: "Description for Project 3" },
-    { image: "./img/temp/project-4.jpg", description: "Description for Project 4" },
-    { image: "./img/temp/project-5.jpg", description: "Description for Project 5" }
+    { image: './img/temp/project-1.jpg', description: "Moving Purple Heart" },
+    { image: "./img/temp/project-2.2.jpg", description: "My Artworks!" },
+    { image: "./img/temp/project-3.jpg", description: "A simple search mobile app" },
+    { image: "./img/temp/project-4.jpg", description: "Travel List App" },
+    { image: "./img/temp/project-5.jpg", description: "UI for online shopping app" }
   ];
   
   let currentSlide = 0;
@@ -30,19 +30,24 @@ const projects = [
   // Initialize the first slide
   showSlide(currentSlide);
   
-  // Toggle project details on the Projects page
-  function toggleProjectDetails(button) {
-    const projectDetails = button.nextElementSibling;
-    const isExpanded = projectDetails.style.display === "block";
-    
-    if (isExpanded) {
-      projectDetails.style.display = "none";
-      button.textContent = "▼";
-    } else {
-      projectDetails.style.display = "block";
-      button.textContent = "▲";
-    }
+
+
+
+
+
+function toggleProjectDetails(button) {
+  const projectDetails = button.closest('.project-item').querySelector('.project-details');
+  const isExpanded = projectDetails.style.display === "block";
+
+  if (isExpanded) {
+    projectDetails.style.display = "none";
+    button.textContent = "▼";  // Change the button text to a down arrow
+  } else {
+    projectDetails.style.display = "block";
+    button.textContent = "▲";  // Change the button text to an up arrow
   }
+}
+
   
   // Contact form submission (mock)
   function submitForm(event) {

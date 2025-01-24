@@ -176,7 +176,7 @@ body {
   height: 67vh;
   background-color: #fffbf1;
   position: absolute;
-  top: 210vh;
+  top: 206vh;
   left: 50.5%;
   transform: translate(-47%, -50%);
   border-radius: 2vw;
@@ -262,13 +262,11 @@ button {
 
 #contactbig {
   display: flex;
-  font-size: 5vw;
+  font-size: 100vw;
   color: #323131;
   align-items: center;
   justify-content: center;
-  height: 50vh;
   text-align: center;
-  margin-left: 5vw;
 }
 
 .long-rectangle {
@@ -331,7 +329,7 @@ button {
   left: 5vw;
   top: 120.5vh;
   width: 0.05vw;
-  height: 260vh;
+  height: 450vh;
   background-color: #707070;
 }
 
@@ -366,6 +364,42 @@ button {
   border-radius: 5vw;
 }
 
+.flexingonme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.contact {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 3rem;
+}
+
+.email-address {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#000;
+}
+
+.linkedin-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.linkedin-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
 
 
 
@@ -382,10 +416,7 @@ button {
 
 
 
-
-
-
-
+/* PROJECTS PAGE */
   
   button {
     font-size: 1.5em;
@@ -407,11 +438,14 @@ button {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .project-details {
-    margin-top: 1em;
+    display: flex;
+    margin-top: 1.5em;
     color: #666;
-  }
+    font-family: 'Cooper', serif;
+    font-size: 2rem;
+}
   
   .toggle-details {
     background: none;
@@ -419,4 +453,68 @@ button {
     font-size: 1.5em;
     cursor: pointer;
   }
+
+#bigbigproject {
+  font-style:italic;
+  font-size: 8rem;
+  margin-left: 2vw;
+  color: #3d3d3d;
+
+}
+
+.whatintheworld {
+  font-size: 5rem;
+}
+
+.projectnames {
+  color: black;
+  font-size: 2rem;
+}
+
+.projectshorties {
+  color:#404040;
+  font-size: 1.5rem;
+  font-family: 'cooper', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
